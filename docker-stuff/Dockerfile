@@ -18,7 +18,7 @@ RUN ls -a
 
 RUN head ./src/main.rs
 
-COPY ./* /app/
+COPY . /app/
 
 RUN head ./src/main.rs
 
