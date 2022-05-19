@@ -1,5 +1,5 @@
 fn main() {
-    println!("Hello, world!");
+    println!("Hello, world - 2!");
 
     let felipe_allergie: Allergies = Allergies::new(125);
 

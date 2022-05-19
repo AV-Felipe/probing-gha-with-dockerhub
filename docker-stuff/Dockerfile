@@ -1,8 +1,26 @@
 # Rust as the base image
-FROM rust:1.60.0 AS builder_cache
+# FROM rust:1.60.0 AS builder_cache
+
+# WORKDIR /app
+# COPY . /app/
+
+# RUN cargo build
+
+# RUN cargo run
+
+FROM avfelipe/app:latest
+
+RUN ls -a
 
 WORKDIR /app
-COPY . /app/
+
+RUN ls -a
+
+RUN cat ./src/main.rs
+
+COPY ./* /app/
+
+RUN ls -a
 
 RUN cargo build
 

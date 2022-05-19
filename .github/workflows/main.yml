@@ -29,6 +29,7 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
+      # the tag option defines the repository name and follows the format user/name:version
       # view: https://github.com/docker/build-push-action
       - name: Build and push
         uses: docker/build-push-action@v3
