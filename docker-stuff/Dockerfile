@@ -16,9 +16,11 @@ WORKDIR /app
 
 RUN ls -a
 
-RUN cat ./src/main.rs
+RUN head ./src/main.rs
 
 COPY ./* /app/
+
+RUN head ./src/main.rs
 
 RUN ls -a
 
